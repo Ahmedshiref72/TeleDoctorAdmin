@@ -50,7 +50,9 @@ class ReceiptScreen extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: defaultFormFeild3(
+                      child: defaultFormFeild1(
+                          inputType: TextInputType.number,
+                          validatorText: 'Name must not be empty',
                           controller: roomNo, labelText: 'Enter Room No'),
                     ),
                     Padding(

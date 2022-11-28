@@ -163,9 +163,10 @@ class AddNewAccountScreen extends StatelessWidget {
                               left:size.width*.08 ,
                               right:size.width*.08   ),
                           child: defaultFormFeild1(
+                              inputType: TextInputType.emailAddress,
                               validatorText: 'Email must not be empty',
                               controller: emailController,
-                              inputType: TextInputType.emailAddress,
+
                               labelText: 'Email'
                           )
 

@@ -68,7 +68,9 @@ class AddNewRoomsScreen extends StatelessWidget {
 
                   Padding(
                     padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: defaultFormFeild2(
+                    child: defaultFormFeild1(
+                        inputType: TextInputType.text,
+                        validatorText: 'Name must not be empty',
                         controller: roomNo, labelText: 'Name'),
                   ),
 
@@ -76,7 +78,9 @@ class AddNewRoomsScreen extends StatelessWidget {
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 20, right: 20, top: 20),
-                    child: defaultFormFeild2(
+                    child: defaultFormFeild1(
+                        inputType: TextInputType.text,
+                        validatorText: 'Room Name must not be empty',
                         controller: roomNameController,
                         labelText: 'Enter Room Name'),
                   ),
@@ -85,7 +89,9 @@ class AddNewRoomsScreen extends StatelessWidget {
                   Padding(
                     padding:
                     const EdgeInsets.only(left: 20, right: 20, top: 20),
-                    child: defaultFormFeild2(
+                    child: defaultFormFeild1(
+                        inputType: TextInputType.number,
+                        validatorText: 'Bed No must not be empty',
                         controller: enterBedNo, labelText: 'Enter Bed No'),
                   ),
 
@@ -93,7 +99,9 @@ class AddNewRoomsScreen extends StatelessWidget {
                   Padding(
                     padding:
                     const EdgeInsets.only(left: 20, right: 20, top: 20),
-                    child: defaultFormFeild2(
+                    child: defaultFormFeild1(
+                        inputType: TextInputType.number,
+                        validatorText: 'Price Per Night must not be empty',
                         controller: enterPricePerNight,
                         labelText: 'Enter Price Per Night'),
                   ),

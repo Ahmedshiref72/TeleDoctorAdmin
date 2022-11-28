@@ -13,7 +13,6 @@ void navigateAndEnd(context,widget,) =>
     );
 
 void navigateTo(context, widget) => Navigator.push(
-
   context,
   MaterialPageRoute(
     builder: (context) => widget,
