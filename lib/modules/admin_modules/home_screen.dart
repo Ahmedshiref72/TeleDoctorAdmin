@@ -11,7 +11,6 @@ import 'package:teledoctor/modules/admin_modules/search_screen.dart';
 import 'package:teledoctor/shared/component/components.dart';
 import 'package:teledoctor/shared/constants/constants.dart';
 
-import 'edit_account_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -34,7 +33,7 @@ class HomeScreen extends StatelessWidget {
               children:
               [
                 const Text('Manage User',style: TextStyle(fontSize: 18,
-                fontWeight:FontWeight.w600
+                    fontWeight:FontWeight.w600
                 ),
                 ),
                 const Text('Accounts',style: TextStyle(fontSize: 18,
@@ -47,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                   [
                     HomeScreenItem(size,'add new account','Add New Account',context,AddNewAccountScreen()),
                     const SizedBox(width:15,),
-                    HomeScreenItem(size,'edit account','Edit Account',context,SearchScreen()),
+                    HomeScreenItem(size,'edit account','Edit Account',context,EditScreen1()),
 
 
 

@@ -323,7 +323,7 @@ class EditAccountScreen extends StatelessWidget {
                                   left:size.width*.05 ,
                                   right:size.width*.03  ),
                               child:defaultButton3(
-                                width:170,
+                                  width:170,
                                   string: 'Delete Account',
                                   function: ()
                                   {
@@ -335,8 +335,8 @@ class EditAccountScreen extends StatelessWidget {
                           Padding(
                               padding:EdgeInsets.only(
                                 left: size.width*.01,
-                                  top:size.height*.92,
-                                   ),
+                                top:size.height*.92,
+                              ),
                               child:defaultButton4(
                                   width:170,
                                   string: 'Save changes',
@@ -352,7 +352,7 @@ class EditAccountScreen extends StatelessWidget {
                       ),
 
                       Padding(
-                        padding: EdgeInsets.only(top:size.height*1.2),
+                          padding: EdgeInsets.only(top:size.height*1.2),
                           child:SizedBox(
                             width: 100,
                             height: 10,
@@ -374,5 +374,4 @@ class EditAccountScreen extends StatelessWidget {
     );
   }
 }
-
 

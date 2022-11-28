@@ -48,7 +48,7 @@ class CheckOutScreen extends StatelessWidget {
                         ),
                         Padding(
                           padding:
-                              EdgeInsets.only(top: 7.0, left: size.width * .12),
+                          EdgeInsets.only(top: 7.0, left: size.width * .12),
                           child: Text(
                             'Check Out',
                             style: TextStyle(
@@ -67,7 +67,7 @@ class CheckOutScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
-                        right: 110, left: 110,
+                      right: 110, left: 110,
                       top: 50,
                     ),
                     child: Divider(
@@ -269,9 +269,9 @@ class CheckOutScreen extends StatelessWidget {
                   ),
                   Padding(
                       padding:
-                          const EdgeInsets.only(left: 20, right: 20, top: 50),
+                      const EdgeInsets.only(left: 20, right: 20, top: 50),
                       child:
-                          defaultButton2(string: 'Check Out', function: () {})),
+                      defaultButton2(string: 'Check Out', function: () {})),
                 ],
               ),
             ),

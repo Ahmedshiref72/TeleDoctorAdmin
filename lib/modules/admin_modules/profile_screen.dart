@@ -99,7 +99,7 @@ class ProfileScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(50) ,
+                                  topRight: Radius.circular(50) ,
                                   topLeft: Radius.circular(50)
                               )
                           ),
@@ -128,14 +128,14 @@ class ProfileScreen extends StatelessWidget {
                           padding: EdgeInsets.only(
                               top:size.height*.13,
                               left: 30,
-                            right: 30
+                              right: 30
 
 
                           ),
                           child: defaultFormFeild2(
                               controller: nameController,
                               labelText: 'Name'
-                            )
+                          )
                           ,
                         ),
 
@@ -220,5 +220,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-
 

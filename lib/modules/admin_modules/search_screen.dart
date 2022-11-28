@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:teledoctor/modules/admin_modules/edit_account_screen.dart';
 import 'package:teledoctor/shared/component/components.dart';
 
-class SearchScreen extends StatefulWidget {
-  const SearchScreen({Key? key}) : super(key: key);
+class EditScreen1 extends StatefulWidget {
+  const EditScreen1({Key? key}) : super(key: key);
 
   @override
-  State<SearchScreen> createState() => _SearchScreenState();
+  State<EditScreen1> createState() => _EditScreen1State();
 }
 
-class _SearchScreenState extends State<SearchScreen> {
+class _EditScreen1State extends State<EditScreen1> {
   String email = "";
 
   List<Map<String, dynamic>> data = [
