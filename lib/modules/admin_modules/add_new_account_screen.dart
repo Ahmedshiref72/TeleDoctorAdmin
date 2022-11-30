@@ -342,4 +342,3 @@ class AddNewAccountScreen extends StatelessWidget {
     );
   }
 }
-

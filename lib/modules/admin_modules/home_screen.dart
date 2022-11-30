@@ -7,10 +7,11 @@ import 'package:teledoctor/modules/admin_modules/add_new_account_screen.dart';
 import 'package:teledoctor/modules/admin_modules/add_new_room_screen.dart';
 import 'package:teledoctor/modules/admin_modules/empty_rooms_screen.dart';
 import 'package:teledoctor/modules/admin_modules/full_rooms_screen.dart';
-import 'package:teledoctor/modules/admin_modules/search_screen.dart';
 import 'package:teledoctor/shared/component/components.dart';
 import 'package:teledoctor/shared/constants/constants.dart';
 
+import 'edit_account_screen.dart';
+import 'edit_acount_1_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -33,7 +34,7 @@ class HomeScreen extends StatelessWidget {
               children:
               [
                 const Text('Manage User',style: TextStyle(fontSize: 18,
-                    fontWeight:FontWeight.w600
+                fontWeight:FontWeight.w600
                 ),
                 ),
                 const Text('Accounts',style: TextStyle(fontSize: 18,

@@ -13,6 +13,7 @@ void navigateAndEnd(context,widget,) =>
     );
 
 void navigateTo(context, widget) => Navigator.push(
+
   context,
   MaterialPageRoute(
     builder: (context) => widget,
@@ -20,39 +21,39 @@ void navigateTo(context, widget) => Navigator.push(
 );
 
 Widget defaultButton({
-var textColor =const Color(0xFF014963),
-double width = 200,
-double height = 50.0,
-Color? color,
-var context,
-required String string,
-required Function? function(),
+  var textColor =const Color(0xFF014963),
+  double width = 200,
+  double height = 50.0,
+  Color? color,
+  var context,
+  required String string,
+  required Function? function(),
 }) =>
-Container(
-width: width,
-height: height,
-decoration: BoxDecoration(
-color: color,
-borderRadius: BorderRadius.circular(10),
-),
-child: Center(
-child: MaterialButton(
-minWidth: width,
-child: Padding(
-padding: const EdgeInsets.all(8.0),
-child: Text(string,
-style:GoogleFonts.laila(
-fontSize: 22,
-fontWeight: FontWeight.bold,
-color: textColor,
-fontStyle: FontStyle.italic,
-)),
-),
-onPressed: function
+    Container(
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Center(
+        child: MaterialButton(
+            minWidth: width,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(string,
+                  style:GoogleFonts.laila(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: textColor,
+                    fontStyle: FontStyle.italic,
+                  )),
+            ),
+            onPressed: function
 
-),
-),
-);
+        ),
+      ),
+    );
 
 Widget defaultButton2({
   double width =double.infinity,
@@ -88,22 +89,22 @@ Widget defaultButton3({
   required String string,
   required Function function,
 }) =>Container(
-  height: height,
-  width: width,
-  decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(10),
-      border: Border.all(color: Colors.red)
-  ),
-  child: Center(
-    child: MaterialButton(
-        child: Text(string.toUpperCase(),
-            style: TextStyle(fontSize: 14,
-                fontWeight: FontWeight.w700,
-                color: Colors.red)),
-        onPressed: function()),
-  ),
-);
+      height: height,
+      width: width,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.red)
+      ),
+      child: Center(
+        child: MaterialButton(
+            child: Text(string.toUpperCase(),
+                style: TextStyle(fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.red)),
+            onPressed: function()),
+      ),
+    );
 
 Widget defaultButton4({
   double width =double.infinity,
@@ -147,7 +148,7 @@ Widget defaultFormFeild({
   required String labelText,
   bool isObsecured=false,
   context
-
+  
 })=>TextFormField(
   cursorColor: cursorColor,
   validator: (value){

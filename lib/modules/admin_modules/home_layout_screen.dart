@@ -16,39 +16,40 @@ class HomeLayoutScreen extends StatelessWidget {
     Size size=MediaQuery.of(context).size;
 
     return BlocConsumer<AppCubit,AppState>(
-        listener:(context,state){} ,
+      listener:(context,state){} ,
         builder:(context,state)
         {
           var cubit=AppCubit.get(context);
           return Scaffold(
-              body:cubit.layOutScreens[cubit.currentIndex] ,
-              bottomNavigationBar: SalomonBottomBar(
-                currentIndex: cubit.currentIndex,
-                onTap:(index)=>cubit.changeBottomNav(index),
-                selectedItemColor: primaryColor,
-                unselectedItemColor: Colors.grey[600],
-                margin: const EdgeInsets.all(15),
-                items:
-                [
-                  SalomonBottomBarItem(
-                      icon: Icon(Iconsax.home_25,size: size.width*.09,),
-                      title: Text("Home")),
-                  SalomonBottomBarItem(
-                      icon: Icon(Iconsax.receipt_2_15,size: size.width*.09,),
-                      title: Text("Receipt")),
-                  SalomonBottomBarItem(
-                      icon: Icon(Icons.person_add_alt_1_sharp,size: size.width*.09,),
-                      title: Text("Add")),
-                  SalomonBottomBarItem(
-                      icon: Icon(Icons.person,size: size.width*.09,),
-                      title: Text("Profile")),
+            body:cubit.layOutScreens[cubit.currentIndex] ,
+            bottomNavigationBar: SalomonBottomBar(
+              currentIndex: cubit.currentIndex,
+              onTap:(index)=>cubit.changeBottomNav(index),
+              selectedItemColor: primaryColor,
+              unselectedItemColor: Colors.grey[600],
+              margin: const EdgeInsets.all(15),
+              items:
+              [
+                SalomonBottomBarItem(
+                    icon: Icon(Iconsax.home_25,size: size.width*.09,),
+                  title: Text("Home")),
+                SalomonBottomBarItem(
+                    icon: Icon(Iconsax.receipt_2_15,size: size.width*.09,),
+                    title: Text("Receipt")),
+                SalomonBottomBarItem(
+                    icon: Icon(Icons.person_add_alt_1_sharp,size: size.width*.09,),
+                    title: Text("Add")),
+                SalomonBottomBarItem(
+                    icon: Icon(Icons.person,size: size.width*.09,),
+                    title: Text("Profile")),
 
 
-                ],
+              ],
 
-              )
+            )
           );
         }
     );
   }
 }
+
