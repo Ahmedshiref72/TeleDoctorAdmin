@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../modules/admin_modules/add_patient_screen.dart';
@@ -211,17 +210,11 @@ class AppCubit extends Cubit<AppState> {
     ReceiptScreen(),
     AddNewPatientScreen(),
     ProfileScreen(),
-
   ];
-
   int currentIndex = 0;
-
   void changeBottomNav(int index) {
-
       currentIndex = index;
       emit(BottomNavigationBarChangedState());
-
-
   }
 
 
@@ -270,3 +263,5 @@ class AppCubit extends Cubit<AppState> {
 
 
 }
+
+
