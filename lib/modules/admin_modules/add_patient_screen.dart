@@ -34,6 +34,7 @@ class AddNewPatientScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+
                         Padding(
                           padding:
                           EdgeInsets.only(top: 7.0, left: size.width * .12),

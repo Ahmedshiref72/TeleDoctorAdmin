@@ -8,14 +8,14 @@ import '../../shared/constants/constants.dart';
 
 
 
-class SearchForPatienScreen extends StatefulWidget {
-  const SearchForPatienScreen({Key? key}) : super(key: key);
+class SearchForPatientScreen extends StatefulWidget {
+  const SearchForPatientScreen({Key? key}) : super(key: key);
 
   @override
-  State<SearchForPatienScreen> createState() => _SearchForPatienScreenState();
+  State<SearchForPatientScreen> createState() => _SearchForPatientScreenState();
 }
 
-class _SearchForPatienScreenState extends State<SearchForPatienScreen> {
+class _SearchForPatientScreenState extends State<SearchForPatientScreen> {
   String name = "";
 
   List<Map<String, dynamic>> data = [
@@ -338,4 +338,3 @@ class _SearchForPatienScreenState extends State<SearchForPatienScreen> {
         ));
   }
 }
-

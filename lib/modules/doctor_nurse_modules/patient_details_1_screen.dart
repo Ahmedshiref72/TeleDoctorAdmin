@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:teledoctor/modules/doctor_nurse_modules/patient_details_screen.dart';
+import 'package:teledoctor/modules/doctor_nurse_modules/patient_details_2_screen.dart';
 import '../../cubit/app_cubit.dart';
 import '../../cubit/app_state.dart';
 import '../../shared/component/components.dart';
 import '../../shared/constants/constants.dart';
 
 
-class PatientDetails1 extends StatelessWidget {
-  const PatientDetails1({Key? key}) : super(key: key);
+class PatientDetailsScreen1 extends StatelessWidget {
+  const PatientDetailsScreen1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -411,7 +411,10 @@ class PatientDetails1 extends StatelessWidget {
                                         right: 8, left: 50),
                                     child: TextButton(
                                       child: Text('Chat with Reem'),
-                                      onPressed: () {},
+                                      onPressed: ()
+                                      {
+
+                                      },
                                     ),
                                   ),
                                 ],
@@ -470,7 +473,7 @@ class PatientDetails1 extends StatelessWidget {
                                     height: size.height * .06,
                                   ),
                                   Text(
-                                    '21 Years',
+                                    '120 mgl',
                                     style:
                                     TextStyle(fontWeight: FontWeight.bold),
                                   )
@@ -503,7 +506,7 @@ class PatientDetails1 extends StatelessWidget {
                                     height: size.height * .06,
                                   ),
                                   Text(
-                                    '21 Years',
+                                    '120/80',
                                     style:
                                     TextStyle(fontWeight: FontWeight.bold),
                                   )
@@ -574,8 +577,7 @@ class PatientDetails1 extends StatelessWidget {
                       child: defaultButton2(
                           string: 'ADD New Recored',
                           function: () {
-                            navigateTo(context, PatientDetails());
-
+                            navigateTo(context, PatientDetailsScreen2());
                           })),
 
                   //recored
@@ -609,7 +611,7 @@ Widget buildItem(context, size) => Padding(
           color: Colors.grey.shade300,
         ),
         width: size.width * .93,
-        height: size.height * .2,
+        height: size.height * .16,
         child: Column(
           children: [
             Row(
@@ -644,10 +646,14 @@ Widget buildItem(context, size) => Padding(
                 ),
               ],
             ),
+
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                  'kjdchsxzbukjhbkjhzxnckjnx o nosdihzoascilz iwoqocahsnxzouilcsah n '),
+              child:Text(
+                'kjdchsxzbukjhbkjhzxnckjnx o nosdihzoascilzvbfdbdrfbtbdg iwoqocahsnxzouilcsah n dsvhjcxgbilhjvzbcx hljnmbvcx kjzmnvb,cx hjnmzvb,c hj.nmvbxzckj ,mzvnxcb lhjnzmxvcb ;hkzjvxmc.b;ojzxckhbnauod;jzhrbadfv;uizjckbvduxcj',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),

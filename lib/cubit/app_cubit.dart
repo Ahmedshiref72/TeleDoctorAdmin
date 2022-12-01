@@ -1,9 +1,14 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:teledoctor/modules/doctor_nurse_modules/doctor_nurse_home_screen.dart';
 import '../modules/admin_modules/add_patient_screen.dart';
 import '../modules/admin_modules/home_screen.dart';
 import '../modules/admin_modules/profile_screen.dart';
 import '../modules/admin_modules/receipt_screen.dart';
+import '../modules/doctor_nurse_modules/doctor_nurse_notification_screen.dart';
+import '../modules/doctor_nurse_modules/doctor_nurse_profile_screen.dart';
+import '../modules/doctor_nurse_modules/search_for_petient_screen.dart';
 import '../modules/start_modules/login/login_screen.dart';
 import '../shared/component/components.dart';
 import '../shared/local/shared_preference.dart';
@@ -204,17 +209,32 @@ class AppCubit extends Cubit<AppState> {
 
 
 
-  List<Widget> layOutScreens =
+  List<Widget> adminLayOutScreens =
   [
     HomeScreen(),
     ReceiptScreen(),
     AddNewPatientScreen(),
     ProfileScreen(),
+
   ];
+
+  List<Widget> doctorAndNurseLayOutScreens =
+  [
+    DoctorAndNurseHomeScreen(),
+    SearchForPatientScreen(),
+    DoctorAndNurseNotificationScreen(),
+    DoctorAndNurseProfileScreen(),
+
+  ];
+
   int currentIndex = 0;
+
   void changeBottomNav(int index) {
+
       currentIndex = index;
       emit(BottomNavigationBarChangedState());
+
+
   }
 
 
@@ -263,5 +283,3 @@ class AppCubit extends Cubit<AppState> {
 
 
 }
-
-

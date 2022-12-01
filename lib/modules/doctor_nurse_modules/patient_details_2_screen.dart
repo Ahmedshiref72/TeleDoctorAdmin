@@ -9,8 +9,8 @@ import '../../shared/constants/constants.dart';
 
 
 
-class PatientDetails extends StatelessWidget {
-  const PatientDetails({Key? key}) : super(key: key);
+class PatientDetailsScreen2 extends StatelessWidget {
+  const PatientDetailsScreen2({Key? key}) : super(key: key);
 
 
 
@@ -190,7 +190,6 @@ class PatientDetails extends StatelessWidget {
         });
   }
 }
-
 
 
 
